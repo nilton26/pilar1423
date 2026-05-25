@@ -1,0 +1,463 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Carta Eterna 1779720295591</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; }
+        
+        body { 
+            background-color: #fff1f2 !important; 
+            background: #fff1f2 !important; 
+            color: #881337 !important; 
+            font-family: 'Playfair Display', serif !important; 
+            font-size: 16px !important;
+            overflow-x: hidden; 
+            overflow-y: auto; 
+        }
+        body * { font-family: 'Playfair Display', serif !important; }
+        
+        body > div { background-color: #fff1f2 !important; background-image: none !important; }
+        
+        body > div > div[id^="slide-"], body > div > div[id^="scene-"], body > div > div[id^="ticket-"], body > div > div[id^="photos-"], body > div > div[id^="final-"], body > div > div[id^="cover"], body > div > div[id^="main-content"] { 
+            background-color: #fff1f2 !important; 
+            background-image: none !important; 
+        }
+        
+        h1, h2, h3, h4, p, span, a, li, div { color: #881337 !important; }
+
+        h1 { font-size: 250% !important; }
+        h2 { font-size: 200% !important; }
+        h3 { font-size: 150% !important; }
+        
+        
+        
+    </style>
+</head>
+<body>
+    
+    <div id="story-app" class="relative w-full h-full overflow-hidden bg-rose-50 font-serif text-rose-900 select-none">
+        
+        <!-- FONDO ATMOSFÉRICO -->
+        <div class="absolute inset-0 z-0 pointer-events-none">
+            <!-- Gradiente animado -->
+            <div class="absolute inset-0 bg-gradient-to-br from-rose-100 via-pink-50 to-orange-50 animate-gradient-slow"></div>
+            <!-- Partículas flotantes -->
+            <div id="particles-container" class="absolute inset-0 opacity-50"></div>
+            <!-- Textura de ruido -->
+            <div class="absolute inset-0 opacity-20 mix-blend-overlay" style="background-image: url('https://www.transparenttextures.com/patterns/stardust.png');"></div>
+        </div>
+
+        <!-- BARRA DE PROGRESO -->
+        <div class="absolute top-0 left-0 w-full h-1 bg-rose-200/50 z-50 pointer-events-none">
+            <div id="progress-bar" class="h-full bg-rose-500 w-0 transition-all duration-1000 ease-out shadow-[0_0_10px_rgba(244,63,94,0.5)]"></div>
+        </div>
+
+        <!-- CONTENEDOR DE SLIDES -->
+        <div id="slides-container" class="relative z-10 w-full h-full">
+
+            <!-- SLIDE 0: INTRO -->
+            <!-- Agregado overflow-y-auto y un wrapper min-h-full para permitir scroll si la pantalla es muy chica -->
+            <div id="slide-0" class="absolute inset-0 overflow-y-auto overflow-x-hidden transition-all duration-1000 z-50 no-scrollbar">
+                <div class="min-h-full w-full flex flex-col items-center justify-center p-8 pb-20">
+                    <div class="relative cursor-pointer group" onclick="nextSlide(1)">
+                        <!-- Círculo pulsante -->
+                        <div class="absolute inset-0 bg-rose-400 rounded-full blur-xl opacity-20 group-hover:opacity-40 transition-opacity duration-500 animate-pulse-slow"></div>
+                        
+                        <div class="relative bg-white/40 backdrop-blur-md border border-white/60 p-10 md:p-12 rounded-full shadow-2xl transform transition-transform duration-700 group-hover:scale-105 group-active:scale-95">
+                            <span class="text-5xl md:text-6xl filter drop-shadow-md animate-heartbeat">❤️</span>
+                        </div>
+                        
+                        <p class="mt-8 text-center text-rose-800 text-xs md:text-sm uppercase tracking-[0.3em] font-bold opacity-0 animate-fade-in-up" style="animation-delay: 0.5s; text-shadow: 0 2px 8px rgba(255,255,255,0.8), 0 0 2px white;">
+                            Abrir nuestra historia
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 1 -->
+            <div id="slide-1" class="absolute inset-0 overflow-y-auto overflow-x-hidden translate-y-full opacity-0 transition-all duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] pointer-events-none no-scrollbar">
+                <div class="min-h-full w-full flex flex-col items-center justify-center p-4 py-12 md:py-8">
+                    <div class="w-full max-w-sm md:max-w-md bg-white/60 backdrop-blur-xl rounded-3xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] overflow-hidden border border-white/50 transform transition-transform duration-1000 scale-95 flex-shrink-0" id="card-1">
+                        <div class="relative aspect-[4/5] overflow-hidden group">
+                            <img src="1.jpeg" class="">
+                            <div class="absolute inset-0 bg-gradient-to-t from-rose-900/60 via-transparent to-transparent opacity-80"></div>
+                            <div class="absolute bottom-0 left-0 w-full p-6 text-white translate-y-4 opacity-0 transition-all duration-1000 delay-300" id="text-1">
+                                <h2 class="font-[Dancing_Script] text-3xl md:text-4xl mb-2" style="text-shadow: 0 2px 10px rgba(0,0,0,0.5), 0 0 20px rgba(255,255,255,0.3), -1px -1px 0 rgba(255,255,255,0.3), 1px -1px 0 rgba(255,255,255,0.3), -1px 1px 0 rgba(255,255,255,0.3), 1px 1px 0 rgba(255,255,255,0.3);">El Primer Instante</h2>
+                                <div class="w-12 h-0.5 bg-white/80 mb-3"></div>
+                            </div>
+                        </div>
+                        <div class="p-6 md:p-8 text-center">
+                            <p class="text-rose-900 leading-relaxed italic font-light text-sm md:text-base">Todo comenzó con una mirada que detuvo mi tiempo...</p>
+                            
+                            <button onclick="nextSlide(2)" class="mt-6 w-12 h-12 rounded-full border border-rose-300 text-rose-500 flex items-center justify-center mx-auto hover:bg-rose-500 hover:text-white transition-colors duration-300 shadow-sm text-lg pointer-events-auto relative z-20">↓</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 2 -->
+            <div id="slide-2" class="absolute inset-0 overflow-y-auto overflow-x-hidden translate-y-full opacity-0 transition-all duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] pointer-events-none no-scrollbar">
+                <div class="min-h-full w-full flex flex-col items-center justify-center p-4 py-12 md:py-8">
+                    <div class="w-full max-w-sm md:max-w-md relative flex-shrink-0">
+                        <!-- Foto estilo polaroid flotante -->
+                        <div class="absolute top-0 right-0 w-32 h-32 md:w-48 md:h-48 bg-white p-2 shadow-2xl transform rotate-6 z-20 rounded-lg animate-float-slow" id="photo-2">
+                            <div class="w-full h-full overflow-hidden rounded bg-gray-100">
+                                <img src="2.jpeg" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        
+                        <!-- Tarjeta de texto -->
+                        <div class="bg-white/80 backdrop-blur-md p-6 pt-16 md:p-8 md:pt-24 rounded-2xl shadow-xl border border-white/50 mt-16 md:mt-20 text-left relative z-10 transform translate-y-10 opacity-0 transition-all duration-1000 delay-200" id="card-2">
+                            <h2 class="text-2xl md:text-3xl text-rose-600 mb-4 font-bold tracking-tight">Creciendo Juntos</h2>
+                            <p class="text-gray-700 leading-loose text-sm border-l-2 border-rose-300 pl-4">Cada risa compartida construyó los cimientos de lo que somos hoy.</p>
+                            <div class="flex justify-end mt-6">
+                                <button onclick="nextSlide(3)" class="text-xs font-bold uppercase tracking-widest text-rose-400 hover:text-rose-600 transition flex items-center gap-2 pointer-events-auto bg-rose-50 px-4 py-2 rounded-full shadow-sm">
+                                    Continuar <span>&rarr;</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 3 -->
+            <div id="slide-3" class="absolute inset-0 overflow-y-auto overflow-x-hidden translate-y-full opacity-0 transition-all duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] pointer-events-none no-scrollbar">
+                <div class="min-h-full w-full flex flex-col items-center justify-center p-6 py-12 md:py-8">
+                    <div class="w-full max-w-sm md:max-w-md flex flex-col items-center flex-shrink-0">
+                        
+                        <div class="relative w-full aspect-square flex items-center justify-center mb-8">
+                            <!-- Marco Circular -->
+                            <div class="absolute inset-0 border border-white/30 rounded-full scale-150 animate-pulse-slow opacity-30"></div>
+                            
+                            <div class="relative w-full h-full rounded-full overflow-hidden bg-black shadow-2xl border-4 border-white/20 transform scale-0 transition-transform duration-[1.5s] cubic-bezier(0.34, 1.56, 0.64, 1)" id="circle-3">
+                                <img src="3.jpeg" class="w-full h-full object-cover opacity-80">
+                                <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center p-8 transition-opacity duration-500 hover:bg-black/20">
+                                <h2 class="font-[Dancing_Script] text-3xl md:text-5xl mb-4" style="color: #FFE5EC; -webkit-text-stroke: 2px rgba(255,255,255,1); paint-order: stroke fill; text-shadow: 0 0 15px rgba(255,255,255,0.9), 0 0 30px rgba(255,255,255,0.6), 0 4px 8px rgba(0,0,0,0.8);">Inseparables</h2>
+                                <p class="text-sm md:text-lg leading-snug" style="color: #FFF5F7; -webkit-text-stroke: 1.5px rgba(255,255,255,1); paint-order: stroke fill; text-shadow: 0 0 12px rgba(255,255,255,0.9), 0 0 25px rgba(255,255,255,0.5), 0 3px 6px rgba(0,0,0,0.7);">No importa el destino, siempre que el viaje sea contigo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button onclick="nextSlide(4)" class="bg-white text-rose-600 px-8 py-3 rounded-full font-bold shadow-lg hover:shadow-rose-500/30 transform hover:-translate-y-1 transition-all z-30 opacity-0 delay-1000 duration-1000 pointer-events-auto mb-4" id="btn-3">
+                            Ver Final ❤️
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 4: FINAL -->
+            <div id="slide-4" class="absolute inset-0 overflow-y-auto overflow-x-hidden translate-y-full opacity-0 transition-all duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] pointer-events-none bg-rose-900/10 backdrop-blur-sm no-scrollbar">
+                <div class="min-h-full w-full flex flex-col items-center justify-center p-8 py-20 text-center">
+                    
+                    <div class="max-w-md w-full relative flex-shrink-0">
+                        <div class="text-6xl md:text-8xl mb-6 animate-float-slow filter drop-shadow-xl">✨</div>
+                        
+                        <h1 class="text-4xl md:text-7xl font-[Dancing_Script] text-rose-600 mb-8 drop-shadow-sm leading-tight transform scale-90 opacity-0 transition-all duration-1000 delay-300" id="final-title">Te Amo Infinito</h1>
+                        
+                        <div class="w-16 h-1 bg-gradient-to-r from-transparent via-rose-400 to-transparent mx-auto mb-8"></div>
+                        
+                        <p class="text-lg md:text-2xl text-rose-800 font-light italic leading-relaxed mb-12 opacity-0 translate-y-4 transition-all duration-1000 delay-500" id="final-msg">
+                            "Gracias por ser mi historia favorita."
+                        </p>
+                        
+                        <p class="text-xs font-bold text-rose-400 uppercase tracking-[0.4em] mb-12 opacity-0 transition-all duration-1000 delay-700" id="final-sign">Tu Amor</p>
+                        
+                        <button onclick="initLoveStory()" class="text-xs text-rose-400 border border-rose-200 px-6 py-2 rounded-full hover:bg-white hover:text-rose-600 transition-all shadow-sm opacity-0 delay-1000 duration-1000 pointer-events-auto" id="final-btn">
+                            Volver a vivirlo
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+        /* Ocultar scrollbar pero permitir funcionalidad */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        @keyframes gradientSlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .animate-gradient-slow {
+            background-size: 200% 200%;
+            animation: gradientSlow 15s ease infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(6deg); }
+            50% { transform: translateY(-15px) rotate(6deg); }
+        }
+        .animate-float-slow { animation: float 6s ease-in-out infinite; }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            15% { transform: scale(1.15); }
+            30% { transform: scale(1); }
+            45% { transform: scale(1.15); }
+            60% { transform: scale(1); }
+        }
+        .animate-heartbeat { animation: heartbeat 2s infinite cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+        @keyframes pulseSlow {
+            0%, 100% { opacity: 0.2; transform: scale(1); }
+            50% { opacity: 0.4; transform: scale(1.1); }
+        }
+        .animate-pulse-slow { animation: pulseSlow 3s infinite; }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up { animation: fadeInUp 1s ease-out forwards; }
+
+        /* Partículas */
+        .particle {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            opacity: 0.6;
+            animation: rise var(--duration) ease-in infinite;
+            pointer-events: none;
+        }
+        @keyframes rise {
+            0% { transform: translateY(0) scale(1); opacity: 0; }
+            50% { opacity: 0.8; }
+            100% { transform: translateY(-100vh) scale(0); opacity: 0; }
+        }
+    </style>
+
+    <script>
+        let currentSlide = 0;
+
+        window.initLoveStory = function() {
+            currentSlide = 0;
+            updateProgressBar(0);
+            
+            // Reset Slides
+            for(let i=0; i<=4; i++) {
+                const el = document.getElementById('slide-'+i);
+                if(!el) continue;
+                
+                el.style.transition = 'none';
+                el.scrollTop = 0; // Reset scroll position
+                
+                if(i === 0) {
+                    el.style.transform = 'translateY(0)';
+                    el.style.opacity = '1';
+                    el.style.pointerEvents = 'auto';
+                } else {
+                    el.style.transform = 'translateY(100%)';
+                    el.style.opacity = '0';
+                    el.style.pointerEvents = 'none';
+                }
+                
+                resetInternalAnimations(i);
+
+                setTimeout(() => el.style.transition = '', 50);
+            }
+            
+            initParticles();
+        }
+
+        window.nextSlide = function(n) {
+            const prev = document.getElementById('slide-' + (n-1));
+            const current = document.getElementById('slide-' + n);
+            
+            if(prev) {
+                prev.style.transform = 'translateY(-20%) scale(0.95)';
+                prev.style.opacity = '0';
+                prev.style.pointerEvents = 'none';
+            }
+            
+            if(current) {
+                current.scrollTop = 0; // Importante: volver arriba al cambiar
+                current.style.transform = 'translateY(0)';
+                current.style.opacity = '1';
+                current.style.pointerEvents = 'auto';
+            }
+            
+            currentSlide = n;
+            updateProgressBar(n);
+            triggerSlideAnimations(n);
+        }
+
+        function updateProgressBar(n) {
+            const bar = document.getElementById('progress-bar');
+            if(bar) bar.style.width = (n * 25) + '%';
+        }
+
+        function triggerSlideAnimations(n) {
+            if(n === 1) {
+                document.getElementById('card-1').style.transform = 'scale(1)';
+                document.getElementById('text-1').style.transform = 'translateY(0)';
+                document.getElementById('text-1').style.opacity = '1';
+            }
+            if(n === 2) {
+                document.getElementById('card-2').style.transform = 'translateY(0)';
+                document.getElementById('card-2').style.opacity = '1';
+            }
+            if(n === 3) {
+                document.getElementById('circle-3').style.transform = 'scale(1)';
+                document.getElementById('btn-3').style.opacity = '1';
+            }
+            if(n === 4) {
+                document.getElementById('final-title').style.transform = 'scale(1)';
+                document.getElementById('final-title').style.opacity = '1';
+                
+                document.getElementById('final-msg').style.transform = 'translateY(0)';
+                document.getElementById('final-msg').style.opacity = '1';
+                
+                document.getElementById('final-sign').style.opacity = '1';
+                document.getElementById('final-btn').style.opacity = '1';
+                
+                createExplosion();
+            }
+        }
+
+        function resetInternalAnimations(n) {
+            if(n === 1) {
+                const c1 = document.getElementById('card-1');
+                const t1 = document.getElementById('text-1');
+                if(c1) c1.style.transform = 'scale(0.95)';
+                if(t1) {
+                    t1.style.transform = 'translateY(20px)';
+                    t1.style.opacity = '0';
+                }
+            }
+            if(n === 2) {
+                const c2 = document.getElementById('card-2');
+                if(c2) {
+                    c2.style.transform = 'translateY(40px)';
+                    c2.style.opacity = '0';
+                }
+            }
+            if(n === 3) {
+                const c3 = document.getElementById('circle-3');
+                const b3 = document.getElementById('btn-3');
+                if(c3) c3.style.transform = 'scale(0)';
+                if(b3) b3.style.opacity = '0';
+            }
+            if(n === 4) {
+                ['final-title', 'final-msg', 'final-sign', 'final-btn'].forEach(id => {
+                    const el = document.getElementById(id);
+                    if(!el) return;
+                    el.style.opacity = '0';
+                    if(id.includes('title')) el.style.transform = 'scale(0.9)';
+                    else if(id.includes('msg')) el.style.transform = 'translateY(20px)';
+                });
+            }
+        }
+
+        function initParticles() {
+            const container = document.getElementById('particles-container');
+            if(!container || container.childElementCount > 0) return;
+            
+            for(let i=0; i<20; i++) {
+                const p = document.createElement('div');
+                p.className = 'particle';
+                const size = Math.random() * 4 + 2;
+                p.style.width = size + 'px';
+                p.style.height = size + 'px';
+                p.style.left = Math.random() * 100 + '%';
+                p.style.top = '100%';
+                
+                const duration = Math.random() * 10 + 10;
+                const delay = Math.random() * -20;
+                
+                p.style.setProperty('--duration', duration + 's');
+                p.style.animationDelay = delay + 's';
+                
+                container.appendChild(p);
+            }
+        }
+
+        function createExplosion() {
+            if(navigator.vibrate) navigator.vibrate([50, 50, 50]);
+        }
+    </script>
+  
+    
+<style>
+    /* Estilos encapsulados para no afectar tu web */
+    .ce-watermark-container {
+        margin-top: 20px; /* Reducido para no ocupar tanta altura */
+        padding: 10px 0 20px 0;
+        width: 100%;
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        opacity: 0;
+        animation: ceFadeIn 2s ease-out forwards;
+        animation-delay: 1s; /* Aparece un poco después de que terminan las transiciones */
+    }
+
+    .ce-separator {
+        width: 40px;
+        height: 1px;
+        background: rgba(0, 0, 0, 0.15); /* Línea muy sutil */
+        margin: 0 auto 15px auto;
+        border: none;
+    }
+
+    .ce-link {
+        text-decoration: none;
+        color: #888; /* Gris elegante */
+        font-size: 12px;
+        letter-spacing: 1px; /* Espaciado premium */
+        transition: all 0.3s ease;
+        opacity: 0.7;
+    }
+
+    .ce-link:hover {
+        opacity: 1;
+        color: #555;
+    }
+
+    .ce-heart {
+        display: inline-block;
+        color: #e57373; /* Rojo suave, no agresivo */
+        font-size: 14px;
+        animation: ceHeartBeat 3s infinite ease-in-out;
+    }
+
+    /* Animaciones */
+    @keyframes ceFadeIn { to { opacity: 1; } }
+    @keyframes ceHeartBeat {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.15); }
+    }
+</style>
+
+<div class="ce-watermark-container">
+    <hr class="ce-separator">
+    <a href="https://tucartaeterna.com" target="_blank" class="ce-link">
+        Creado con <span class="ce-heart">♥</span> en <strong>tucartaeterna.com</strong>
+    </a>
+</div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            try {
+                initLoveStory();
+            } catch(e) {
+                console.error("Error al iniciar la plantilla:", e);
+            }
+        });
+    </script>
+</body>
+</html>
